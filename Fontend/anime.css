@@ -1,0 +1,266 @@
+    body{
+        margin: 0px;
+        padding: 0px;
+        max-width: 100vw;
+        font-size: 20px;
+         background: rgba(0, 0, 0, 0.9);;
+    }
+    header {
+       width: 100%;
+        z-index: 11;
+        display:flex;
+        justify-content:space-between;
+        color: rgb(229, 231, 235);
+        overflow: hidden;  
+        background-color: rgb(35, 37, 43);
+    }
+
+    header div nav{
+        display: flex;
+    }
+
+    header div nav li{
+        display: flex;
+        align-items: center;
+        position: relative;
+        padding: 20px;
+    }
+
+    header div nav li:hover{
+        background-color:rgb(13, 13, 14);
+        cursor:pointer;
+    }
+    .header_left{
+        margin-left: 20px;
+    }
+
+    .chill_firt{
+        color: #17E0A1;
+        font-size: 26px;
+
+    }
+    .header_right{
+        margin-right: 20px;
+    }
+
+    .header_menu{
+        display: none;
+    }
+
+    .cover{
+        display: none;
+        background-color: rgba(0, 0, 0, 0.7);
+        width: 100px;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100hw;
+        z-index: 5;
+    }
+
+
+        .ul_theloai {
+            width: 500px;
+            height: max-content;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr); /* Tạo 3 cột */
+            position: absolute;
+            background-color: black;
+            margin-top: 70px;
+            top:0;
+            left: 0;
+            transform: translate(-300px,-300px);
+        }
+
+    .ul_quocgia {
+        
+            width: 300px;
+            height: max-content;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr); /* Tạo 3 cột */
+            position: absolute;
+            background-color: black;
+            margin-top: 70px;
+            top:0;
+            left: 0;
+            transform: translate(-300px,-300px);
+        
+        }
+        .ul_theloai li,.ul_quocgia li {
+            font-size: 14px;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+        
+        .select {
+            transform: none;
+            z-index: 11;
+        }
+        .isnotnone{
+            display: block;
+        }
+      
+        .changebgr{
+            background-color: rgb(13, 13, 14);
+        }
+
+
+
+        @media (min-width: 641px) and (max-width: 1023px) {
+            /* Navigation list item */
+            header div nav li {
+                padding: 8px;
+            }
+        
+            /* Hover effect for navigation items */
+            header div nav li:hover {
+                background-color: rgb(13, 13, 14);
+                cursor: pointer;
+            }
+        
+            /* Styling for left header */
+            .header_left {
+                margin-left: 8px;
+            }
+        
+            /* Styling for right header */
+            .header_right {
+                margin-right: 12px;
+            }
+        
+            /* Dropdown or menu for ul_theloai */
+            .ul_theloai {
+                width: 300px;
+                height: max-content;
+                display: grid;
+                grid-template-columns: repeat(3, 1fr); /* 3 equal columns */
+                position: absolute;
+                background-color: black;
+                margin-top: 46px;
+                top: 0;
+                left: 0;
+               
+            }
+            .ul_quocgia {
+                width: 300px;
+                height: max-content;
+                display: grid;
+                grid-template-columns: repeat(2, 1fr); /* Tạo 3 cột */
+                position: absolute;
+                background-color: black;
+                margin-top: 46px;
+                top:0;
+                left: 0;
+            }
+        }
+
+        @media(max-width:641px) 
+        {
+            body{
+                font-size:14px;
+            }
+            
+                header div nav li{
+                    padding: 10px;
+                }
+                
+                header div nav li:hover{
+                    background-color:rgb(13, 13, 14);
+                    cursor:pointer;
+                }
+            
+                
+                .header_left nav :first-child{
+                    color: #17E0A1;
+                    font-size: 13px;
+                
+                }
+                .header_right{
+                    margin-right: 10px;
+                }
+            
+                .header_left nav :nth-child(3),
+                .header_left nav :nth-child(4),
+                .header_left nav :nth-child(5)
+                    {
+                        display: none;
+                    }
+                
+                .header_menu{
+                    display: block;
+                }
+              
+            
+        }
+.cover_man {
+            position: fixed;  /* Để cover_man luôn nằm trên màn hình */
+            width: 100vw;
+            height: 100vh;
+            z-index: 10;
+            background: rgba(22, 20, 20, 0.5); 
+        }
+
+ .app{
+         width: 100%;
+         margin: 0;
+         padding: 0;
+         }
+         
+
+
+
+footer {
+margin-top: 50px;
+background-color: #1a2a3a;
+display: flex;
+justify-content: space-between;
+color: #fff;
+padding: 0 30px ;
+align-items: center;
+font-family: Arial, sans-serif;
+}
+.footer-logo img{
+    width: 100px;
+    height: 100px;
+}
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+ a{
+    text-align: none;
+}
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+  }
+  .footer-links li {
+    margin: 10px 0;
+  }
+  .footer-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.3s;
+  }
+  .footer-links a:hover {
+    color: #e50914;
+  }
+  .footer-social a:hover {
+    color: #e50914;
+  }
+  
+  .footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .footer-bottom p {
+    font-size: 14px;
+  }  

@@ -1,0 +1,248 @@
+
+.slider{
+    width:100%;
+    height: 600px;
+    position: relative;
+    overflow: hidden;
+}
+
+.list
+{
+    position: absolute;
+    top:0px;
+    left: 0px;
+    height: 100%;
+    display: flex;
+    width: max-content;
+    transition: 1s;
+}
+
+
+.list img{
+    width:100vw;
+    height: 100%;
+    overflow: hidden;
+    object-fit: cover;
+}
+
+.butons{
+    position: absolute;
+    top:45%;
+    left: 5%;
+    width: 90%;
+    display: flex;
+    justify-content:space-between;  
+}
+
+.butons button{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #fff5;
+    color: white;
+    border: none;
+    font-family: monospace;
+    font-size: bold;
+}
+
+.butons button:hover{
+    cursor: pointer;
+}
+
+
+
+.dots li{
+    list-style: none;
+    width: 20px;
+    height: 20px;
+    background-color: #fff;
+    border-radius: 20px;
+    margin: 20px;
+    transition: 1s;
+}
+
+.dots li:hover{
+   cursor: pointer;
+}
+
+
+.dots{
+    width: 100%;
+    position: absolute;
+    bottom: 10px;
+    color: #fff;
+    margin: 0 auto;
+    padding: 0 ; 
+    display: flex;
+    justify-content:center;
+
+}
+
+.dots li.active
+{
+    width: 50px;
+}
+
+
+.animeitem{
+    width: 90%;
+}
+.new {
+  display: grid; /* Thêm display:grid để kích hoạt grid layout */
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding: 10px;
+  }
+  
+  .animeitem {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    transition: transform 0.3s;
+  }
+  
+
+
+
+  .animeitem:hover {
+    transform: translateY(-5px);
+  }
+  
+  .anime-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  .anime-title {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin: 10px 0;
+  }
+  
+  .anime-description {
+    font-size: 0.9em;
+    color: #555;
+    margin-bottom: 10px;
+  }
+  
+  .anime-episodes, .anime-status, .anime-genre {
+    font-size: 0.9em;
+    color: #333;
+    margin: 5px 0;
+  }
+
+ .trening{
+
+  display: flex;
+  color: white;
+  align-items: center;
+  justify-content: space-between;
+ }
+
+ .trening a{
+  margin-right:30px;
+  color: white;
+  text-decoration: none;
+ }
+ .title{
+  align-items: center;
+  display: flex;
+  margin-left: 20px;
+ }
+ .indicator{
+  width: 3px;
+  height: 30px;
+  margin-right:4px ;
+  background-color: #e50914;
+ }
+
+ .animeitem{
+  height: 250px;
+  background-size:cover;
+  background-position: center;
+  color: white; 
+  position: relative;
+ }
+
+ .animeitem .anime-title{
+  position: absolute;
+  left: 50%;
+  top:100%;
+  transform: translate(-50%,0%);
+ }
+
+ .animeitem .anime-episodes{
+  display: flex;
+  background-color: #e50914;
+  align-items: center;
+  color: #fff;
+  position: absolute;
+  width:40px;
+  height:40px;
+  font-size: 16px;
+  border-radius: 50%;
+  left: 80%;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3); 
+  top:2%;
+  justify-content: center;
+ }
+ .animeitem .anime-star{
+  width:60px;
+  height:40px;
+  position: absolute;
+  left: 5%;
+  top:1%;
+ }
+ .animeitem .anime-view{
+  color: #78909c;
+  position: absolute;
+  left: 50%;
+  top:105%;
+  transform: translate(-50%,0%);
+ }
+
+  
+ @media (min-width: 641px) and (max-width: 1023px) {
+
+  .new {
+    grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+      padding: 10px;
+    }
+    .animeitem{
+      font-size: 12px;
+      margin-bottom: 22px;
+    }
+}
+  @media (max-width: 641px){
+    .slider{
+      max-height: 30vh;
+    }
+    .dots li.active
+    {
+    width: 30px;
+  }
+  .dots li{
+    list-style: none;
+    width: 10px;
+    height: 10px;
+  border-radius: 10px;
+  margin: 10px;
+}
+
+    .new {
+      grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+        padding: 10px;
+      }
+      .animeitem{
+        font-size: 12px;
+        margin-bottom: 22px;
+      }
+   
+  }
+
+
+  

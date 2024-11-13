@@ -1,0 +1,1 @@
+-Tạo 1 cái header mẫu rồi bên trong nó chứa những content(là các trang html và có các file và các css riếng)
